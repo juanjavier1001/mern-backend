@@ -14,7 +14,7 @@ app.use(taskRouter);
 
 app.get('/', (req, res) => {
 	res.send('hola ura');
-});	
+});
 
 app.get('/connectDB', async (req, res) => {
 	try {
