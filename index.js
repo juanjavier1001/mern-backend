@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.use(taskRouter);
 
-app.get('/', (req, res) => {
+/* app.get('/', (req, res) => {
 	res.send('hola ura');
 });
 
@@ -25,6 +25,6 @@ app.get('/connectDB', async (req, res) => {
 		console.log('error al conectar', error);
 		res.send(error);
 	}
-});
+}); */
 
 app.listen(PORT, () => console.log('server on ... ' + PORT));
